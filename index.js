@@ -2,7 +2,7 @@
  * @Author: Aakash Gajjar
  * @Date:   2019-11-05 19:16:28
  * @Last Modified by:   Sky
- * @Last Modified time: 2019-11-05 20:51:33
+ * @Last Modified time: 2019-11-05 20:53:12
  */
 
 const
@@ -32,7 +32,7 @@ server.on('proxyEnd', function (response, args) {
     console.log(args);
 });
 
-var server = http..createServer(function (req, res) {
+var server = http.createServer(function (req, res) {
     res.send("Running");
 });
 server.listen(80);
