@@ -2,12 +2,13 @@
  * @Author: Aakash Gajjar
  * @Date:   2019-11-05 19:16:28
  * @Last Modified by:   Sky
- * @Last Modified time: 2019-11-05 20:42:45
+ * @Last Modified time: 2019-11-05 20:51:33
  */
 
 const
     socks5 = require('simple-socks'),
-    server = socks5.createServer().listen(80);
+    server = socks5.createServer().listen(1080),
+    http = require('http');
 
 // When a reqest arrives for a remote destination
 server.on('proxyConnect', function (info, destination) {
@@ -30,3 +31,8 @@ server.on('proxyEnd', function (response, args) {
     console.log('socket closed with code %d', response);
     console.log(args);
 });
+
+var server = http..createServer(function (req, res) {
+    res.send("Running");
+});
+server.listen(80);
