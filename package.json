@@ -1,19 +1,59 @@
 {
-  "name": "proxy-server",
+  "name": "node-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Localhost Node API-Server",
+  "main": "server.js",
   "engines": {
     "node": "12.x"
   },
-  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "filedownloader": "^1.2.7",
+    "helmet": "^3.21.1",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.4",
+    "request": "^2.88.0",
+    "response-time": "^2.3.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jquery": "^1.5.1",
+    "eslint-plugin-react": "^7.16.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "check": "node_modules/.bin/eslint .",
+    "check-fix": "node_modules/.bin/eslint --fix .",
+    "prettier": "prettier --check **/*.js",
+    "prettier-fix": "prettier --check --write **/*.js"
   },
-  "keywords": [],
-  "author": "",
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyme5/proxy-server.git"
+  },
+  "keywords": [
+    "Node",
+    "API",
+    "Server"
+  ],
+  "author": "Aakash Gajjar",
   "license": "ISC",
-  "dependencies": {
-    "simple-socks": "^1.0.3"
-  }
+  "bugs": {
+    "url": "https://github.com/skyme5/proxy-server/issues"
+  },
+  "homepage": "https://github.com/skyme5/proxy-server#readme"
 }

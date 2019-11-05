@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(rel="stylesheet" href="/css/downloader.css")
+		title Reddit Saved
+		script.
+			window.initData=!{initDATA}
+	body
+		input#url(type="url")
+		button#submit GET
+		div#preview
+		script(src="/js/downloader.js")

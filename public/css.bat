@@ -1,0 +1,2 @@
+cd css
+sassw css

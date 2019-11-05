@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "jquery": true,
+        "greasemonkey": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "jquery"
+    ],
+    "globals": {
+        "_$": "readonly",
+        "Atomics": "readonly",
+        "CKEDITOR": "readonly",
+        "ClipboardJS": "readonly",
+        "Download": "readonly",
+        "Dropzone": "readonly",
+        "initData": "writable",
+        "ISBN": "readonly",
+        "ISOCode": "readonly",
+        "jStat": "readonly",
+        "M": "readonly",
+        "marked": "readonly",
+        "MathJax": "readonly",
+        "MESSAGES": "readonly",
+        "Plotly": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "Sky": "readonly",
+        "Sugar": "readonly",
+        "Swiper": "readonly",
+        "twemoji": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "camelcase": ["error", {
+            "allow": ["sky[\\d_]+"],
+			"properties": "never"
+        }],
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+        }]
+    }
+}
