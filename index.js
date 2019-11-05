@@ -2,12 +2,12 @@
  * @Author: Aakash Gajjar
  * @Date:   2019-11-05 19:16:28
  * @Last Modified by:   Sky
- * @Last Modified time: 2019-11-05 19:47:04
+ * @Last Modified time: 2019-11-05 20:42:45
  */
 
 const
     socks5 = require('simple-socks'),
-    server = socks5.createServer().listen(1080);
+    server = socks5.createServer().listen(80);
 
 // When a reqest arrives for a remote destination
 server.on('proxyConnect', function (info, destination) {
